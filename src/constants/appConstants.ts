@@ -13,12 +13,9 @@ const app: constants = {
     EVENT_EMIT: 'EVENT_EMIT',
     DOC_DIRECTORY: 'storage/tmp',
     DOC_ZIP_DIRECTORY: 'storage/tmp/zip',
-    DOCUMENT_TYPE: '',
-    DOCUMENT_CATEGORY: '',
     DOCUMENT_SOURCE: 'LOS',
     REQUEST_ID_PREFIX: 'SERVICENAME',
     ENTITY_TYPE: ['T', 'RP', 'RC'],
-    DOCUMENT_SECTION: '',
     CURRENT_TIMESTAMP: 'CURRENT_TIMESTAMP',
     SHEET_NAME: 'SHEET_NAME',
     DEFAULT_DATE_FORMAT: 'YYYY-MM-DD HH:mm:ss',
@@ -28,7 +25,6 @@ const app: constants = {
     EXCEL_EXTENSION: '.xlsx',
     HEADER_VALIDATOR_EXCEPTOR: ['CHECK_APPLICATION_HEALTH', 'API_DOCUMENTATION'],
     SEARCH_LIST: ["client_code", "event_code", "clientCode", "eventCode", "health"],
-    RECORD_AGE_IN_MONTH: 3,
     ACTION: {
         CHECK_APPLICATION_HEALTH: 'CHECK_APPLICATION_HEALTH',
         MEDIA_FILE_UPLOADS: 'MEDIA_FILE_UPLOADS',
@@ -44,6 +40,9 @@ const app: constants = {
         },
         '/v1/:eventCode/files': {
             POST: 'MEDIA_FILE_UPLOADS'
+        },
+        '/v1/:eventCode/frames': {
+            GET: 'FETCH_FRAMES'
         }
     },
     MEDIA_CDN_URL: '<CDN_URL>',
