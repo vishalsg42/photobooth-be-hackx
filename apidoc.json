@@ -1,0 +1,17 @@
+{
+    "name": "photobooth-be-hackx",
+    "version": "1.0.0",
+    "description": "uploads photos from client app",
+    "title": "Brower api title",
+    "url": "https://photobooth-be-hackx.vishalsg42.com",
+    "sampleUrl": "https://photobooth-be-hackx.vishalsg42.com",
+    "header": {
+        "title": "Introduction",
+        "filename": "header.md"
+    },
+    "template": {
+        "withCompare": true,
+        "withGenerator": true,
+        "aloneDisplay": false
+    }
+}
