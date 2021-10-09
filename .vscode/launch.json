@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Dev Server",
+            "protocol": "inspector",
+            "args": [
+                "${workspaceRoot}/src/app.ts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Dev",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/app.ts",
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "preLaunchTask": "compile",
+            "console": "internalConsole",
+        },
+        {
+            "name": "Stage",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/app.ts",
+            "protocol": "inspector",
+            "outFiles": [
+                "${workspaceFolder}/dist/app.js"
+            ],
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "compile",
+            "console": "internalConsole",
+            "env": {
+                "NODE_ENV": "stage"
+            }
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/app.ts",
+            "name": "Launch Prod",
+            "protocol": "inspector",
+            "args": [
+                "${workspaceRoot}/src/app.ts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "NODE_ENV": "prod"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
