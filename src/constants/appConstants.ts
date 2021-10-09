@@ -45,9 +45,9 @@ const app: constants = {
             GET: 'FETCH_FRAMES'
         }
     },
-    MEDIA_CDN_URL: '<CDN_URL>',
+    MEDIA_CDN_URL: 'https://media-asset-photobooth.s3.ap-south-1.amazonaws.com',
     SUBSCRIBED_EMAIL_TEMPLATE : {
-        senderEmail: '<EMAIL_ID>',
+        senderEmail: 'no-reply@splashbooth.com',
         subject: `Here's your selfie`,
     }
 }
