@@ -5,6 +5,7 @@ import "reflect-metadata";
 import fileUpload from 'express-fileupload';
 
 // Application imports
+import router from "./routes/urls";
 
 const app = express();
 const PORT = process.env.PORT || 8008;
@@ -27,6 +28,9 @@ app.use(httpContext.middleware);
 // public setup
 app.use(express.static("public"));
 app.use(express.static("storage/tmp"));
+
+// Routes will always go here
+app.use("/", router);
 
 // exiting all the process before terminating the app
 process.on("SIGINT", () => {
