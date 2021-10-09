@@ -16,15 +16,15 @@
     },
     "aws": {
         "s3": {
-            "accessKeyId": "AKIASYJH6KTGPZBMXS6D",
-            "secretAccessKey": "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",
+            "accessKeyId": "",
+            "secretAccessKey": "",
             "bucket": "beslin-event-conf",
             "region": "ap-south-1",
             "apiVersion": "latest"
         },
         "ses": {
-            "accessKeyId": "AKIA5JVAYZ4DFHYJNQDZ",
-            "secretAccessKey": "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",
+            "accessKeyId": "",
+            "secretAccessKey": "",
             "region": "ap-south-1",
             "apiVersion": "2010-12-01"
         }
