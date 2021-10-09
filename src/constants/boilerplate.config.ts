@@ -1,0 +1,8 @@
+const boilerplateConfig = {
+    APPLICATION_NAME: 'PHOTOBOOTH_SERVICE',
+    CONSOLE_LOG : true,
+    REQUEST_RESPONSE_LOGGER : 'PHOTOBOOTH_REQUEST_RESPONSE_LOGGER',
+    SERVICE_CALL_LOGGER : 'PHOTOBOOTH_SERVICE_CALL_LOGGER',
+    HEADER_RESPONSE_KEY : 'x-photobooth-id'
+};
+export default boilerplateConfig;
