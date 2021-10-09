@@ -1,7 +1,7 @@
 # Photobooth BE
 
-# To start the APP
+__To start the dev enviornment local APP__
 
 ```sh
-NODE_ENV=dev npm 
+NODE_ENV=dev npm run ts-serve
 ```
